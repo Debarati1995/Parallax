@@ -6,11 +6,13 @@ $(document).ready(function () {
 		console.log(scroll_measure);
 		
 		var segment = $('.segment1').height();
-		var mermid =  $('.mermid').height();
+		var mermaid =  $('.mermaid').height();
+		var left_pos=parseInt($('.starfish').css("left"));
 		if (scroll_measure > 0 && scroll_measure < segment) {
-			$('.segment1').css({'background-position':  '' + (-(scroll_measure/50)) + 'px 0px'});
+			$('.segment1').css({'background-position':  '0px ' + (-(scroll_measure/5)) + 'px'});
 			$(".fish").css({ "transform": "translate(-" + (scroll_measure * 0.5) + "px," + (scroll_measure) + "px" });
-			$(".starfish").css({ "transform": "rotate(" + scroll_measure + "deg)", "left": ((scroll_measure) * 0.5) + 'px' });
+			$(".starfish").css({ "transform": "rotate(" + scroll_measure + "deg)", "left": (left_pos+(scroll_measure * 0.2)) + 'px' });
+			console.log(left_pos+'px');
 		}
 		
 		if (scroll_measure > 100) {
@@ -24,22 +26,29 @@ $(document).ready(function () {
 				'transform': 'translate3d(0px,-' + (scroll_measure * 0.25) + 'px,0px)'
 			});
 		}
-		if (scroll_measure > 300) {
-			$(".mermid1").css({
+		if (scroll_measure > 300 && scroll_measure<630) {
+			$(".mermaid1").css({
 				'transform': 'translate3d(' + (-(scroll_measure - 500) *1.2) + 'px,'+((scroll_measure - 500) * 2)+'px,0px)'
-				
 			});
-			$(".mermid2").css({
+		}
+		if(scroll_measure > 300){
+			$(".mermaid2").css({
 				'transform': 'translate3d(' + ((scroll_measure - 400) * 0.5) + 'px,-' + ((scroll_measure-400) * 0.5) + 'px,0px)'
 			});
 			
 		}
-		if(scroll_measure>631){
-			$(".mermid1").css({
-				'transform':'rotateZ(45deg)',
-				'top': (-(scroll_measure) * 1.2) + 'px)',
-				'left':  (-(scroll_measure) * 1.2) + 'px)'
+		if(scroll_measure>640){
+			$(".mermaid1").css({
+				'transform':'rotateZ(45deg)'
+				
 			});
+
+			// $(".mermaid1").eq(0).css({
+			// 	transform: 'translate('+(-(scroll_measure/20) * 1.2) + 'px,'+((scroll_measure/90) * 1.2) + 'px'+')'
+			// 	// 'top': (-(scroll_measure/20) * 1.2) + 'px',
+			// 	// 'left':  ((scroll_measure/90) * 1.2) + 'px'
+			// });
+			
 		}
 		// if(scroll_measure > 260 && scroll_measure<(segment+mermid)){
 				
@@ -52,11 +61,19 @@ $(document).ready(function () {
 		// else {
 		// 	$(".mermid1").fadeOut(1000);
 		// }
-		// if(scroll_measure>624){
-		// 	$('.turtle').css({
-				
-		// 	});
-		// }
-
+		 if(scroll_measure>1383){
+		 	$('.turtle').css({
+				'transform':'translate3d(-'+(scroll_measure-1380)+'px,'+(scroll_measure-1370)+'px,0px)'
+			});
+		 }
+		 if(scroll_measure>1483){
+		 	$('.yellow-fish').css({
+				'transform':'scale('+(1+((scroll_measure-1480)*0.003))+')',
+				'right': ((scroll_measure-1480)*0.5) + 'px'
+			});
+			$('.group-of-fish').css({
+				'transform':'translate3d('+(scroll_measure-1480)+'px,'+(scroll_measure-1470)+'px,0px)'
+			});
+		 }
 	});
 });

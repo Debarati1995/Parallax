@@ -1,0 +1,131 @@
+body {
+	margin:0;
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+.segment1 {
+	background-image:url('photos/bg.jpg');
+	background-attachment:fixed;
+	background-repeat:no-repeat;
+	background-position: 0% 0%;
+	background-size:cover;
+	position:relative;
+	height:100%;
+	width:100%;
+	overflow:hidden;
+	
+}
+.fish {
+	position:absolute;
+	top:10%;
+	right:20%;
+	height:150px;
+	width:200px;
+	
+}
+.starfish{
+	position:absolute;
+	bottom:25%;
+	left:0%;
+	width:100px;
+	height:100px;
+	
+}
+.layers{
+	position: absolute;
+	height: 150px;
+	width: 100%;
+	background-image: url('photos/VNnl0p.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	z-index: 1;
+}
+.layer1 img{
+	transition: transform 1s;
+	height: 150px;
+	width: 100%;
+	background-repeat: no-repeat;
+	position: absolute;
+	top: -30px;
+	z-index: 1;
+}
+.layer2 img{
+	transition: transform 1s;
+	height:100px;
+	width: 100%;
+	background-repeat: no-repeat;
+	position: absolute;
+	top: 50px;
+	z-index: 2;
+	
+}
+.layer3 img{
+	transition: transform 1s;
+	height: 200px;
+	width: 100%;
+	background-repeat: no-repeat;
+	position: absolute;
+	top: 150px;
+	z-index: 3;
+}
+#overlay {
+        position: fixed;
+        background:rgba(0,0,0,0.96);
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+  		z-index:10;
+  		text-align:center;
+    }
+#overlay img{
+  position:absolute ;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+ }
+ .mermid {
+	 height: 100%;
+	 width: 100%;
+	 background-image: url('photos/6a23efca9a7a420f427c9d9dadfea202_preview-under-the-sea-background-clipart-free_1272-627.png');
+	 background-attachment: fixed;
+	 background-repeat: no-repeat;
+	 background-size: cover;
+	 position: relative;
+	 top: 0px;
+	 overflow: hidden;
+ }
+.mermid1{
+	 width: 350px;
+    height: 315px;
+	 position: absolute;
+	 right: 0px;
+	 top: 0px;
+	 z-index: 999;
+ }
+ .mermid2{
+	 width: 375px;
+	 height: 335px;
+	 position: absolute;
+	 left: 0px;
+	 bottom: 0px;
+	 z-index: 50;
+ }
+ .turtle{
+	 background-image: url('photos/bg2.jpg');
+	 background-attachment: fixed;
+	 background-repeat: no-repeat;
+	 background-size: cover;
+	 height: 200%;
+	 width: 100%;
+	 position: relative;
+ }
+ .turtle img{
+	 height: 200px;
+	 width: 250px;
+	 position: absolute;
+	 right: 0;
+	 top: 450px;
+ }
+ 

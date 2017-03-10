@@ -33,7 +33,7 @@ body {
 }
 .layers{
 	position: absolute;
-	height: 150px;
+	height: 100%;
 	width: 100%;
 	background-image: url('photos/VNnl0p.jpg');
 	background-repeat: no-repeat;
@@ -43,16 +43,16 @@ body {
 }
 .layer1 img{
 	transition: transform 1s;
-	height: 150px;
+	height:30%;
 	width: 100%;
 	background-repeat: no-repeat;
 	position: absolute;
-	top: -30px;
+	top: 10px;
 	z-index: 1;
 }
 .layer2 img{
 	transition: transform 1s;
-	height:150px;
+	height:20%;
 	width: 100%;
 	background-repeat: no-repeat;
 	position: absolute;
@@ -62,7 +62,7 @@ body {
 }
 .layer3 img{
 	transition: transform 1s;
-	height: 200px;
+	height: 50%;
 	width: 100%;
 	background-repeat: no-repeat;
 	position: absolute;

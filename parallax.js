@@ -42,7 +42,7 @@ $(document).ready(function () {
 				'transform': 'translate3d(0px,-' + (scroll_measure * 0.19) + 'px,0px)'
 			});
 			$(".layer3 img").css({
-				'transform': 'translate3d(0px,-' + (scroll_measure * 0.25) + 'px,0px)'
+				'transform': 'translate3d(0px,-' + (scroll_measure * 0.3) + 'px,0px)'
 			});
 		}
 		if (scroll_measure > 300 && scroll_measure<630) {
@@ -52,7 +52,7 @@ $(document).ready(function () {
 		}
 		if(scroll_measure > 300){
 			$(".mermaid2").css({
-				'transform': 'translate3d(' + ((scroll_measure - 400) * 0.7) + 'px,-' + ((scroll_measure-400) * 1.5) + 'px,0px)'
+				'transform': 'translate3d(' + ((scroll_measure - 500) * 0.7) + 'px,-' + ((scroll_measure-400) * 1.5) + 'px,0px)'
 			});
 			
 		}
@@ -91,6 +91,10 @@ $(document).ready(function () {
 		 if(scroll_measure>1506){
 			 $('.wink-octo').show();
 			 $('.octopus').hide();
+		 }
+		 else{
+			 $('.octopus').show();
+			 $('.wink-octo').hide();
 		 }
 		 if(scroll_measure>1483){
 		 	$('.yellow-fish').css({

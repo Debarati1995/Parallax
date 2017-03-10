@@ -80,14 +80,17 @@ $(document).ready(function () {
 		// else {
 		// 	$(".mermid1").fadeOut(1000);
 		// }
-		 if(scroll_measure>1350){
+		 if(scroll_measure>1050 && scroll_measure<1506){
 		 	$('.turtle').css({
-				'transform':'translate3d(-'+(scroll_measure-1380)+'px,'+(scroll_measure-1370)+'px,0px)'
+				'transform':'translate3d(-'+(scroll_measure-1080)+'px,'+(scroll_measure-1370)+'px,0px)'
 			});
+			$('.octopus').css({
+				'transform':'translate3d('+(scroll_measure-1080)+'px,'+(scroll_measure-1370)+'px,0px)'
+			 });
 		 }
-		 if(scroll_measure>1280){
-			 $('.octopus').css({
-				'transform':'translate3d(0px,'+(scroll_measure/10)+'px, 0px)'
+		 if(scroll_measure>1506){
+			 $('.octopus').stop().css({
+				 'transform':'skew(30deg)'
 			 });
 		 }
 		 if(scroll_measure>1483){

@@ -4,15 +4,15 @@ $(document).ready(function () {
 	$(window).scroll(function () {
 		var scroll_measure = $(window).scrollTop();
 		console.log(scroll_measure);
-		$('div[data-type="parallax"]').each(function(){
-              var acDetails = $(this);
-              scrollStart = $(this).offset().top - $(window).innerHeight()*0.3;
+		// $('div[data-type="parallax"]').each(function(){
+        //       var acDetails = $(this);
+        //       scrollStart = $(this).offset().top - $(window).innerHeight()*0.3;
 
-               if( scroll_measure > scrollStart){
-                  var yPos = -( (scroll_measure%scrollStart) * acDetails.data('speed') );
-                 acDetails.css({'background-position':'center calc(1.0% + '+ yPos +'px)'});
-               }
-          });
+        //        if( scroll_measure > scrollStart){
+        //           var yPos = -( (scroll_measure%scrollStart) * acDetails.data('speed') );
+        //          acDetails.css({'background-position':'center calc(1.0% + '+ yPos +'px)'});
+        //        }
+        //   });
 		var segment = $('.segment1').height();
 		var mermaid =  $('.mermaid').height();
 		
@@ -20,7 +20,7 @@ $(document).ready(function () {
 		// 	$('.starfish').css('left','0px');
 		// }
 		if (scroll_measure > 0 && scroll_measure < segment) {
-			//$('.segment1').css({'background-position':  '0px ' + (-(scroll_measure/5)) + 'px'});
+			$('.segment1').css({'background-position':  '0px ' + (-(scroll_measure/5)) + 'px'});
 			$(".fish").css({ "transform": "translate(-" + (scroll_measure * 0.5) + "px," + (scroll_measure) + "px" });
 
 			$(".starfish").css({ "transform": "rotate(" + scroll_measure + "deg)", 'left': (left_pos+scroll_measure)+'px'});
@@ -36,10 +36,10 @@ $(document).ready(function () {
 		
 		if (scroll_measure > 100) {
 			$(".layer1 img").css({
-				'transform': 'translate3d(0px,-' + (scroll_measure * 0.1) + 'px,0px)'
+				'transform': 'translate3d(0px,-' + (scroll_measure * 0.15) + 'px,0px)'
 			});
 			$(".layer2 img").css({
-				'transform': 'translate3d(0px,-' + (scroll_measure * 0.18) + 'px,0px)'
+				'transform': 'translate3d(0px,-' + (scroll_measure * 0.19) + 'px,0px)'
 			});
 			$(".layer3 img").css({
 				'transform': 'translate3d(0px,-' + (scroll_measure * 0.25) + 'px,0px)'
@@ -80,10 +80,15 @@ $(document).ready(function () {
 		// else {
 		// 	$(".mermid1").fadeOut(1000);
 		// }
-		 if(scroll_measure>1383){
+		 if(scroll_measure>1350){
 		 	$('.turtle').css({
 				'transform':'translate3d(-'+(scroll_measure-1380)+'px,'+(scroll_measure-1370)+'px,0px)'
 			});
+		 }
+		 if(scroll_measure>1280){
+			 $('.octopus').css({
+				'transform':'translate3d(0px,'+(scroll_measure/10)+'px, 0px)'
+			 });
 		 }
 		 if(scroll_measure>1483){
 		 	$('.yellow-fish').css({

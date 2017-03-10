@@ -139,9 +139,11 @@ body {
  }
  .wink-octo {
 	 position: absolute;
-	 right: 0;
-	 bottom: 50px;
-	 left: 50%;
+	 top: 288px;
+	 left: 38%;
+	 width: 200px;
+	 height: 250px;
+	 display: none;
  }
  .segment2 {
 	 background-image:url('photos/psd4920.jpg');

@@ -89,9 +89,8 @@ $(document).ready(function () {
 			 });
 		 }
 		 if(scroll_measure>1506){
-			 $('.octopus').stop().css({
-				 'transform':'skew(30deg)'
-			 });
+			 $('.wink-octo').show();
+			 $('.octopus').hide();
 		 }
 		 if(scroll_measure>1483){
 		 	$('.yellow-fish').css({

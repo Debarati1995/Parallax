@@ -45,7 +45,7 @@ $(document).ready(function () {
 				'transform': 'translate3d(0px,-' + (scroll_measure * 0.5) + 'px,0px)'
 			});
 		}
-		if (scroll_measure > 300 && scroll_measure<680) {
+		if (scroll_measure > 300) {
 			$(".mermaid1").css({
 				'transform': 'translate3d(' + (-(scroll_measure - 500) *1.2) + 'px,'+((scroll_measure - 500) * 2)+'px,0px)'
 			});
@@ -57,11 +57,11 @@ $(document).ready(function () {
 			
 		}
 		if(scroll_measure>680){
-		//$(".mermaid1-1").show();	
+		$(".mermaid1-1").show();	
 		$(".mermaid1-1").css({
 			'transform':'translate3d(' + (-(scroll_measure-500) *1.5) + 'px,'+(-(scroll_measure - 500) * 0.5)+'px,0px)'
 		});
-		//$(".mermaid1").hide();
+		$(".mermaid1").hide();
 		}
 			// $(".mermaid1").eq(0).css({
 			// 	transform: 'translate('+(-(scroll_measure/20) * 1.2) + 'px,'+((scroll_measure/90) * 1.2) + 'px'+')'

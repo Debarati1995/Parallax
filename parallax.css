@@ -113,8 +113,7 @@ body {
 	 right: 215px;
 	 top: 354px;
 	 z-index: 999;
-	 transform: rotateZ(45deg) ! important;
-	
+	 display:none;
  }
  .mermaid2{
 	 width: 375px;
@@ -189,15 +188,4 @@ body {
 	 background-attachment:fixed;
 	 background-repeat:no-repeat;
 	 background-size:cover;
- }
- .puffer-fish {
-	 height:200px;
-	 width:200px;
- }
- .jellyfish {
-	 height:200px;
-	 width:150px;
- }
- .seahorse {
-	 
  }

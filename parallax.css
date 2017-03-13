@@ -2,7 +2,7 @@ body {
 	margin:0;
 	overflow-y: scroll;
 	overflow-x: hidden;
-	background-image: url('photos/bg.jpg');
+	
 }
 .segment1 {
 	background-image:url('photos/bg.jpg');
@@ -77,7 +77,7 @@ body {
         height: 100%;
         top: 0;
         left: 0;
-  		z-index:10;
+  		z-index:1000;
   		text-align:center;
     }
 #overlay img{
@@ -99,12 +99,22 @@ body {
  }
 .mermaid1{  
 	 width: 350px;
-    height: 315px;
+     height: 315px;
 	 position: absolute;
 	 right: 0px;
 	 top: 0px;
 	 z-index: 999;
-	 transition: all 1s ease;
+	 
+ }
+ .mermaid1-1{
+	 width: 350px;
+	 height: 300px;
+	 position: absolute;
+	 right: 215px;
+	 top: 354px;
+	 z-index: 999;
+	 transform: rotateZ(45deg);
+	
  }
  .mermaid2{
 	 width: 375px;
@@ -113,7 +123,7 @@ body {
 	 left: 0px;
 	 bottom: 0px;
 	 z-index: 50;
-	  transition: transform 0.3s;	
+	 transition: transform 0.3s;	
  }
  .multiples{
 	 background-image: url('photos/bg2.jpg');
@@ -143,7 +153,7 @@ body {
  .wink-octo {
 	 position: absolute;
 	 top: 288px;
-	 left: 38%;
+	 left: 38.5%;
 	 width: 200px;
 	 height: 250px;
 	 display: none;
@@ -170,4 +180,24 @@ body {
 	  height: 250px;
 	 width: 250px;
 	 position:absolute;
+ }
+ .segment3 {
+	 height:100%;
+	 width:100%;
+	 position:relative;
+	 background-image:url('photos/219662b31e4b67bb2bd1b8e82d6e59b7.png');
+	 background-attachment:fixed;
+	 background-repeat:no-repeat;
+	 background-size:cover;
+ }
+ .puffer-fish {
+	 height:200px;
+	 width:200px;
+ }
+ .jellyfish {
+	 height:200px;
+	 width:150px;
+ }
+ .seahorse {
+	 
  }

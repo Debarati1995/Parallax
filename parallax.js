@@ -20,7 +20,7 @@ $(document).ready(function () {
 		// 	$('.starfish').css('left','0px');
 		// }
 		if (scroll_measure > 0 && scroll_measure < segment) {
-			$('.segment1').css({'background-position':  '0px ' + (-(scroll_measure/5)) + 'px'});
+			$('.segment1').css({'background-position':  '0px ' + (-(scroll_measure/2)) + 'px'});
 			$(".fish").css({ "transform": "translate(-" + (scroll_measure * 0.5) + "px," + (scroll_measure) + "px" });
 
 			$(".starfish").css({ "transform": "rotate(" + scroll_measure + "deg)", 'left': (left_pos+scroll_measure)+'px'});
@@ -39,36 +39,37 @@ $(document).ready(function () {
 				'transform': 'translate3d(0px,-' + (scroll_measure * 0.15) + 'px,0px)'
 			});
 			$(".layer2 img").css({
-				'transform': 'translate3d(0px,-' + (scroll_measure * 0.19) + 'px,0px)'
+				'transform': 'translate3d(0px,-' + (scroll_measure * 0.2) + 'px,0px)'
 			});
 			$(".layer3 img").css({
-				'transform': 'translate3d(0px,-' + (scroll_measure * 0.3) + 'px,0px)'
+				'transform': 'translate3d(0px,-' + (scroll_measure * 0.5) + 'px,0px)'
 			});
 		}
-		if (scroll_measure > 300 && scroll_measure<630) {
+		if (scroll_measure > 300 && scroll_measure<680) {
 			$(".mermaid1").css({
 				'transform': 'translate3d(' + (-(scroll_measure - 500) *1.2) + 'px,'+((scroll_measure - 500) * 2)+'px,0px)'
 			});
 		}
 		if(scroll_measure > 300){
 			$(".mermaid2").css({
-				'transform': 'translate3d(' + ((scroll_measure - 500) * 0.7) + 'px,-' + ((scroll_measure-400) * 1.5) + 'px,0px)'
+				'transform': 'translate3d(' + ((scroll_measure) * 0.7) + 'px,-' + ((scroll_measure-400) * 1.5) + 'px,0px)'
 			});
 			
 		}
-		if(scroll_measure>640){
-			$(".mermaid1").css({
-				'transform':'rotateZ(45deg)'
-				
-			});
-
+		if(scroll_measure>680){
+		//$(".mermaid1-1").show();	
+		$(".mermaid1-1").css({
+			'transform':'translate3d(' + (-(scroll_measure-500) *1.5) + 'px,'+(-(scroll_measure - 500) * 0.5)+'px,0px)'
+		});
+		//$(".mermaid1").hide();
+		}
 			// $(".mermaid1").eq(0).css({
 			// 	transform: 'translate('+(-(scroll_measure/20) * 1.2) + 'px,'+((scroll_measure/90) * 1.2) + 'px'+')'
 			// 	// 'top': (-(scroll_measure/20) * 1.2) + 'px',
 			// 	// 'left':  ((scroll_measure/90) * 1.2) + 'px'
 			// });
 			
-		}
+		//}
 		// if(scroll_measure > 260 && scroll_measure<(segment+mermid)){
 				
 		// 		$('.mermid').css({'background-position':  '0px ' + (-(scroll_measure/10)) + 'px'});
@@ -80,7 +81,7 @@ $(document).ready(function () {
 		// else {
 		// 	$(".mermid1").fadeOut(1000);
 		// }
-		 if(scroll_measure>1050 && scroll_measure<1506){
+		 if(scroll_measure>1250 && scroll_measure<1506){
 		 	$('.turtle').css({
 				'transform':'translate3d(-'+(scroll_measure-1080)+'px,'+(scroll_measure-1370)+'px,0px)'
 			});
@@ -102,7 +103,7 @@ $(document).ready(function () {
 				'right': ((scroll_measure-1480)*0.5) + 'px'
 			});
 			$('.group-of-fish').css({
-				'transform':'translate3d('+(scroll_measure-1480)+'px,'+(scroll_measure-1470)+'px,0px)'
+				'transform':'translate3d('+(scroll_measure-1480)+'px,'+((scroll_measure-1480)*0.5)+'px,0px)'
 			});
 		 }
 	});

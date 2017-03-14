@@ -79,23 +79,43 @@ body {
         left: 0;
   		z-index:1000;
   		text-align:center;
+		transition: 1s 0.4s;
     }
 #overlay img{
   position:absolute ;
-  top: 50%;
+  top: 25%;
   left: 50%;
   transform: translate(-50%, -50%);
  }
+ #progress{
+  height:30px;
+  background:#F2790D;
+  position:absolute;
+  width:0;
+  top:60%;
+  border-radius: 80%;
+}
+#progstat{
+  font-size:20px;
+  letter-spacing: 3px;
+  position:absolute;
+  top:60%;
+  margin-top:-40px;
+  width:100%;
+  text-align:center;
+  color:#F2790D;
+}
  .mermaid {
 	 height: 100%;
 	 width: 100%;
 	 background-image: url('photos/6a23efca9a7a420f427c9d9dadfea202_preview-under-the-sea-background-clipart-free_1272-627.png');
 	 background-attachment: fixed;
 	 background-repeat: no-repeat;
-	 background-size: cover;
+	 background-size: calc(100% + 90px);
 	 position: relative;
 	 top: 0px;
 	 overflow: hidden;
+	 z-index: 0;
  }
 .mermaid1{  
 	 width: 350px;
@@ -161,12 +181,12 @@ body {
 	 background-image:url('photos/psd4920.jpg');
 	background-attachment:fixed;
 	background-repeat:no-repeat;
-	background-size:cover;
+	background-size:calc(100% + 50px);
 	position:relative;
 	height:100%;
 	width:100%;
 	overflow:hidden;
-	
+	z-index: 0;
  }
  .yellow-fish {
 	 height: 100px;
@@ -180,12 +200,4 @@ body {
 	 width: 250px;
 	 position:absolute;
  }
- .segment3 {
-	 height:100%;
-	 width:100%;
-	 position:relative;
-	 background-image:url('photos/219662b31e4b67bb2bd1b8e82d6e59b7.png');
-	 background-attachment:fixed;
-	 background-repeat:no-repeat;
-	 background-size:cover;
- }
+

@@ -83,23 +83,17 @@ body {
     }
 #overlay img{
   position:absolute ;
-  top: 25%;
+  top: 35%;
   left: 50%;
   transform: translate(-50%, -50%);
  }
- #progress{
-  height:30px;
-  background:#F2790D;
-  position:absolute;
-  width:0;
-  top:60%;
-  border-radius: 80%;
-}
+
 #progstat{
-  font-size:20px;
+  font-size:30px;
+  font-family: Comic Sans MS;
   letter-spacing: 3px;
   position:absolute;
-  top:60%;
+  top:70%;
   margin-top:-40px;
   width:100%;
   text-align:center;
